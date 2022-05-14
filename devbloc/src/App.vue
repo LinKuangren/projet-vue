@@ -1,10 +1,13 @@
 <template>
   <div class="header">
-    <nav>
-      <router-link to="/">Acceuil</router-link> |
-      <router-link to="/dossier">Dossier</router-link> |
-      <router-link to="/ressources">Ressources</router-link>
-    </nav>
+    <div class="contenu_header">
+      <img alt="logo projet" src="../public/logo_final.png">
+      <nav class="nav_header">
+        <router-link to="/">Acceuil</router-link> |
+        <router-link to="/dossier">Dossier</router-link> |
+        <router-link to="/ressources">Ressources</router-link>
+      </nav>
+    </div>
   </div>
   <router-view/>
   <div class="footer">
@@ -25,18 +28,31 @@
   color: #2c3e50;
 }
 
-.header{
+.header {
   background-color: #B4CDED;
   color: white;
 }
 
-.footer{
+img {
+  width: 100px;
+}
+
+.contenu_header {
+  margin: auto 9rem;
+  display: flex;
+}
+
+.footer {
   background-color: #B4CDED;
   color: white;
 }
 
 nav {
   padding: 30px;
+}
+
+.nav_header {
+  margin: 10px 0 0 23rem;
 }
 
 nav a {
